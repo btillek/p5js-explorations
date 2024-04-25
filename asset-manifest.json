@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/p5js-explorations/static/css/main.5a3b27b6.css",
-    "main.js": "/p5js-explorations/static/js/main.c89f5ea0.js",
-    "static/media/circles1.gif": "/p5js-explorations/static/media/circles1.5e94886f561fb352495e.gif",
-    "static/media/circles2.gif": "/p5js-explorations/static/media/circles2.83adc15042e917585744.gif",
-    "static/media/squares2.gif": "/p5js-explorations/static/media/squares2.4c855d5f528f1b07d267.gif",
+    "main.css": "/p5js-explorations/static/css/main.c8031e22.css",
+    "main.js": "/p5js-explorations/static/js/main.8a18839a.js",
+    "static/media/circles1.gif": "/p5js-explorations/static/media/circles1.235cae391765ccf26feb.gif",
+    "static/media/circles2.gif": "/p5js-explorations/static/media/circles2.323ab46f4d059e76fc90.gif",
+    "static/media/circles3.gif": "/p5js-explorations/static/media/circles3.2d82ecf735fe9f195eae.gif",
+    "static/media/squares1.gif": "/p5js-explorations/static/media/squares1.1abf112ec54ea47517f4.gif",
+    "static/media/waves2.gif": "/p5js-explorations/static/media/waves2.74e6b6d3601ab92261f8.gif",
     "index.html": "/p5js-explorations/index.html",
-    "main.5a3b27b6.css.map": "/p5js-explorations/static/css/main.5a3b27b6.css.map",
-    "main.c89f5ea0.js.map": "/p5js-explorations/static/js/main.c89f5ea0.js.map"
+    "main.c8031e22.css.map": "/p5js-explorations/static/css/main.c8031e22.css.map",
+    "main.8a18839a.js.map": "/p5js-explorations/static/js/main.8a18839a.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a3b27b6.css",
-    "static/js/main.c89f5ea0.js"
+    "static/css/main.c8031e22.css",
+    "static/js/main.8a18839a.js"
   ]
 }
