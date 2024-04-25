@@ -1,10 +1,15 @@
 @import url('https://fonts.cdnfonts.com/css/apple-garamond');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap');
 
 .App {
   width: 100vw;
   height: 100vh;
-  font-family: 'Apple Garamond', serif;
+  /* font-family: 'Apple Garamond', serif; */
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Chivo Mono", monospace;
   font-weight: 900;
+  font-size: 0.5rem;
   cursor: none;
 }
 
@@ -26,9 +31,10 @@
 h1 {
   padding: 0;
   margin: 0;
+  font-weight: 500;
 }
 
-.comp1, .comp2, .comp3 {
+.comp1, .comp2, .comp3, .comp4, .comp5 {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -43,6 +49,14 @@ h1 {
 
 .comp3 {
   background-color: rgb(253, 233, 196);
+}
+
+.comp4 {
+  background-color: rgb(27, 68, 91);
+}
+
+.comp5 {
+  background-color: rgb(171, 173, 231);
 }
 
 img {
