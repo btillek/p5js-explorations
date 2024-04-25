@@ -3,10 +3,10 @@ import Lenis from 'lenis'
 import { useState, useEffect } from 'react'
 
 import Image1 from './imgs/circles1.gif'
-import Image2 from './imgs/squares1.gif'
-import Image3 from './imgs/circles3.gif'
+import Image2 from './imgs/circles3.gif'
+import Image3 from './imgs/squares1.gif'
 import Image4 from './imgs/circles2.gif'
-import Image5 from './imgs/waves2.gif'
+import Image5 from './imgs/circles4.gif'
 
 
 
@@ -20,8 +20,8 @@ function App() {
   requestAnimationFrame(raf)
 
   const [mousePos, setMousePos] = useState({
-    x: 0,
-    y: 0
+    x: window.innerWidth / 2 - 150,
+    y: window.innerHeight / 2 - 200,
   })
 
   useEffect(() => {
@@ -38,16 +38,6 @@ function App() {
       window.removeEventListener("mousemove", mouseMove);
     }
   })
-
-  const [showAbout, setShowAbout] = useState(false)
-
-  const mouseEnter = () => {
-    setShowAbout(true);
-  }
-
-  const mouseLeave = () => {
-    setShowAbout(false);
-  }
 
   const imgs = [
     {
@@ -76,7 +66,7 @@ function App() {
     <div className="App">
       <div className="header">
         <h1>p5.js EXPLORATIONS</h1>
-        <h1 onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={{paddingLeft: 150, paddingBottom: 150}}>ABOUT</h1>
+        {/* <h1 onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={{paddingLeft: 150, paddingBottom: 150}}>ABOUT</h1> */}
       </div>
 
       {imgs.map(({img, imgNum}) => {
@@ -87,25 +77,12 @@ function App() {
       </div>
       })}
 
-      {/* <div className="comp1">
-        {!showAbout && (
-          <div className="img-container" style={{top: mousePos.y, left: mousePos.x}}>
-            <img src={Image1} alt="img1" />
-          </div>
-        )}
-      </div>
 
-      <div className="comp2">
-        <div className="img-container" style={{top: mousePos.y, left: mousePos.x}}>
-          <img src={Image2} alt="img1" />
+      <div className="comp-last">
+        <div className="info-container" style={{top: mousePos.y, left: mousePos.x}}>
+          <div>All images created by Boy Tillekens using a JavaScript library called p5.js</div>
         </div>
       </div>
-
-      <div className="comp3">
-        <div className="img-container" style={{top: mousePos.y, left: mousePos.x}}>
-          <img src={Image3} alt="img1" />
-        </div>
-      </div> */}
 
     </div>
   );
